@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleEditorDesktop", "src\UI\RuleEditorDesktop\RuleEditorDesktop.csproj", "{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{ACA1AECC-62E5-46D5-853D-07DCECE17B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9F425133-F59C-4939-9DD9-D6D7323C1A74}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleGist", "src\RuleGist\RuleGist.csproj", "{5EDA75F4-D43C-46DF-A411-AB97737669E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleGist.Test", "src\RuleGist.Test\RuleGist.Test.csproj", "{70409D82-6C0C-4701-ABD9-34955087DF41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{65A4E8AB-0832-46F8-88E0-98D7144BF77C}"
+	ProjectSection(SolutionItems) = preProject
+		Build\RuleEditor.ncover = Build\RuleEditor.ncover
+		Build\RuleEditor.xml = Build\RuleEditor.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{698C80B8-E9E3-48A5-8ABC-98520D006255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleGist.DataAccess", "src\DataAccess\RuleGist.DataAccess\RuleGist.DataAccess.csproj", "{2532429E-9E5B-4F41-BE52-E11019030F28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleGist.DataAccess.Test", "src\DataAccess\RuleGist.DataAccess.Test\RuleGist.DataAccess.Test.csproj", "{044B6874-734E-4093-8C3B-7FCA1BFDC73B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EDA75F4-D43C-46DF-A411-AB97737669E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDA75F4-D43C-46DF-A411-AB97737669E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDA75F4-D43C-46DF-A411-AB97737669E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDA75F4-D43C-46DF-A411-AB97737669E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70409D82-6C0C-4701-ABD9-34955087DF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70409D82-6C0C-4701-ABD9-34955087DF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70409D82-6C0C-4701-ABD9-34955087DF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70409D82-6C0C-4701-ABD9-34955087DF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2532429E-9E5B-4F41-BE52-E11019030F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2532429E-9E5B-4F41-BE52-E11019030F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2532429E-9E5B-4F41-BE52-E11019030F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2532429E-9E5B-4F41-BE52-E11019030F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044B6874-734E-4093-8C3B-7FCA1BFDC73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044B6874-734E-4093-8C3B-7FCA1BFDC73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044B6874-734E-4093-8C3B-7FCA1BFDC73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044B6874-734E-4093-8C3B-7FCA1BFDC73B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5} = {ACA1AECC-62E5-46D5-853D-07DCECE17B18}
+		{2532429E-9E5B-4F41-BE52-E11019030F28} = {698C80B8-E9E3-48A5-8ABC-98520D006255}
+		{044B6874-734E-4093-8C3B-7FCA1BFDC73B} = {698C80B8-E9E3-48A5-8ABC-98520D006255}
+	EndGlobalSection
+EndGlobal
