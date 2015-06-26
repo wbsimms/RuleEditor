@@ -1,1 +1,1 @@
-msbuild EHRProfiler.xml /t:Clean 
+msbuild RuleEditor.xml /t:Clean 
