@@ -4,7 +4,8 @@
 		<MainSln>..\RuleEditor.sln</MainSln>
 		<DataAccess>..\src\DataAccess\RuleGist.DataAccess.Test\bin\RuleGist.DataAccess.Test.dll</DataAccess>
 		<RuleGist>..\src\RuleGist.Test\bin\RuleGist.Test.dll</RuleGist>
-		<TestContainers>/testcontainer:$(RuleGist) /testcontainer:$(DataAccess)</TestContainers>
+    <RuleDesktop>..\src\UI\RuleEditorDesktop.Test\bin\RuleEditorDesktop.Test.dll</RuleDesktop>
+    <TestContainers>/testcontainer:$(RuleGist) /testcontainer:$(DataAccess) /testcontainer:$(RuleDesktop)</TestContainers>
 	</PropertyGroup>
 
 	<Target Name="TestFast">

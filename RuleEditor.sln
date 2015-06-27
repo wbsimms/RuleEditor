@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleGist.DataAccess", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleGist.DataAccess.Test", "src\DataAccess\RuleGist.DataAccess.Test\RuleGist.DataAccess.Test.csproj", "{044B6874-734E-4093-8C3B-7FCA1BFDC73B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleEditorDesktop.Test", "src\UI\RuleEditorDesktop.Test\RuleEditorDesktop.Test.csproj", "{57255F73-98E4-4B9D-A36F-4C63C65E42E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{044B6874-734E-4093-8C3B-7FCA1BFDC73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{044B6874-734E-4093-8C3B-7FCA1BFDC73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{044B6874-734E-4093-8C3B-7FCA1BFDC73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57255F73-98E4-4B9D-A36F-4C63C65E42E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57255F73-98E4-4B9D-A36F-4C63C65E42E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57255F73-98E4-4B9D-A36F-4C63C65E42E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57255F73-98E4-4B9D-A36F-4C63C65E42E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5} = {ACA1AECC-62E5-46D5-853D-07DCECE17B18}
 		{2532429E-9E5B-4F41-BE52-E11019030F28} = {698C80B8-E9E3-48A5-8ABC-98520D006255}
 		{044B6874-734E-4093-8C3B-7FCA1BFDC73B} = {698C80B8-E9E3-48A5-8ABC-98520D006255}
+		{57255F73-98E4-4B9D-A36F-4C63C65E42E9} = {ACA1AECC-62E5-46D5-853D-07DCECE17B18}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45
