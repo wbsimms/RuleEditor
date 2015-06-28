@@ -1,7 +1,7 @@
 {
 	"Name" : "RuleEditor",
 	"Config" : {
-		"branchCvgThreshold" : 89.5,
+		"branchCvgThreshold" : 88.5,
 		"sequencePtCvgThreshold" : 88.4,
 		"conditionCvgThreshold" : 66.2,
 		"complexityThreshold" : 3,
