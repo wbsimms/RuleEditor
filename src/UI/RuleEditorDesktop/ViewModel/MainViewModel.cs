@@ -13,7 +13,7 @@ namespace RuleEditorDesktop.ViewModel
         {
 	        this.factory = uowFactory;
 
-			this.RuleTypes = new List<string>(){"Rule1", "Rule2", "Rule3"};
+			this.RuleTypes = new List<string>(){"Equals Boolean", "Rule2", "Rule3"};
         }
 
 	    public const string RuleTypesPropertyName = "RuleTypes";
