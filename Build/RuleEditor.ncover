@@ -1,13 +1,13 @@
 {
 	"Name" : "RuleEditor",
 	"Config" : {
-		"branchCvgThreshold" : 88.5,
-		"sequencePtCvgThreshold" : 88.4,
-		"conditionCvgThreshold" : 66.2,
-		"complexityThreshold" : 3,
-		"satComplexityThreshold" : 99.0,
+		"sequencePtCvgThreshold" : 84.0,
+		"branchCvgThreshold" : 81.5,
+		"conditionCvgThreshold" : 50.2,
+		"complexityThreshold" : 9,
+		"satComplexityThreshold" : 95.0,
 		"crappyMethodThreshold" : 15,
-		"crapThreshold" : 5,
+		"crapThreshold" : 11,
 		"isCodeCentralProject" : false,
 		"enabled" : true,
 		"aggregateEnabled" : true,
@@ -41,6 +41,12 @@
 					"value" : "RuleGist.dll",
 					"serverRule" : false
 				}, {
+					"include" : true,
+					"field" : "Module",
+					"condition" : "Matches",
+					"value" : "RuleEditorDesktop.exe",
+					"serverRule" : false
+				}, {
 					"include" : false,
 					"field" : "Module",
 					"condition" : "EndsWith",
@@ -57,6 +63,12 @@
 					"field" : "Attribute",
 					"condition" : "Matches",
 					"value" : "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
+					"serverRule" : false
+				}, {
+					"include" : false,
+					"field" : "Attribute",
+					"condition" : "Matches",
+					"value" : "System.CodeDom.Compiler.GeneratedCodeAttribute",
 					"serverRule" : false
 				}
 			]

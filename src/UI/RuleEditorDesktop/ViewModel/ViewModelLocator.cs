@@ -25,7 +25,6 @@ namespace RuleEditorDesktop.ViewModel
         {
 			IUnityContainer container = RuleEditorDesktopResolver.Instance.Container;
 			ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(container));
-
 		}
 
         public MainViewModel Main

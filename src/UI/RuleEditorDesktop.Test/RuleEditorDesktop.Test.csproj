@@ -55,11 +55,19 @@
       <HintPath>..\..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Moq, Version=4.2.1506.2515, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Moq.4.2.1506.2515\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\MvvmLightLibs.5.1.1.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -76,10 +84,17 @@
   <ItemGroup>
     <Compile Include="RuleEditorDesktopResolverTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainWindowTest.cs" />
+    <Compile Include="AppTest.cs" />
     <Compile Include="ViewModel\MainViewModelTest.cs" />
     <Compile Include="ViewModel\ViewModelLocatorTest.cs" />
+    <Compile Include="View\RuleEqualsBooleanTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\RuleGist.DataAccess\RuleGist.DataAccess.csproj">
+      <Project>{2532429E-9E5B-4F41-BE52-E11019030F28}</Project>
+      <Name>RuleGist.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RuleEditorDesktop\RuleEditorDesktop.csproj">
       <Project>{C7B0058A-15A7-4A2F-BD4D-48A6491E21D5}</Project>
       <Name>RuleEditorDesktop</Name>

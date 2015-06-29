@@ -1,34 +1,37 @@
+using System.Collections.Generic;
+using System.Windows.Documents;
 using GalaSoft.MvvmLight;
+using RuleGist.DataAccess;
 
 namespace RuleEditorDesktop.ViewModel
 {
-    /// <summary>
-    /// This class contains properties that the main View can data bind to.
-    /// <para>
-    /// Use the <strong>mvvminpc</strong> snippet to add bindable properties to this ViewModel.
-    /// </para>
-    /// <para>
-    /// You can also use Blend to data bind with the tool's support.
-    /// </para>
-    /// <para>
-    /// See http://www.galasoft.ch/mvvm
-    /// </para>
-    /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
-        public MainViewModel()
+	    private IUnitOfWorkFactory factory;
+
+        public MainViewModel(IUnitOfWorkFactory uowFactory)
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+	        this.factory = uowFactory;
+
+			this.RuleTypes = new List<string>(){"Rule1", "Rule2", "Rule3"};
         }
+
+	    public const string RuleTypesPropertyName = "RuleTypes";
+	    private List<string> ruleTypesList = new List<string>();
+
+	    public List<string> RuleTypes
+	    {
+		    get { return this.ruleTypesList; }
+		    set
+		    {
+			    if (ruleTypesList == value)
+			    {
+				    return;
+			    }
+			    ruleTypesList = value;
+			    RaisePropertyChanged(RuleTypesPropertyName);
+		    }
+	    }
+
     }
 }

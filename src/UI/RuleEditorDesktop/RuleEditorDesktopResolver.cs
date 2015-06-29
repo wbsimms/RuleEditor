@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Practices.Unity;
+using RuleGist.DataAccess;
 
 namespace RuleEditorDesktop
 {
@@ -29,6 +30,7 @@ namespace RuleEditorDesktop
 
 		public void Register(IUnityContainer container)
 		{
+			RuleGistDataAccessResolver.Instance.Register(container);
 		}
 
 		public IUnityContainer Container { get { return _container; } }
