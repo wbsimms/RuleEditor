@@ -64,8 +64,5 @@ namespace RuleEditorDesktop.Test.ViewModel
 			model.SelectedRuleType = "blah";
 			Assert.AreEqual("blah",model.SelectedRuleType);
 		}
-
-
-
 	}
 }

@@ -20,9 +20,7 @@ using Syncfusion.Windows.Tools.Controls;
 
 namespace RuleEditorDesktop
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
+
 	public partial class MainWindow : ChromelessWindow
 	{
 		public MainWindow()
