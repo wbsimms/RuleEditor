@@ -12,7 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Practices.ServiceLocation;
+using RuleEditorDesktop.View;
+using RuleEditorDesktop.ViewModel;
 using Syncfusion.Windows.Shared;
+using Syncfusion.Windows.Tools.Controls;
 
 namespace RuleEditorDesktop
 {
@@ -24,6 +28,12 @@ namespace RuleEditorDesktop
 		public MainWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void RuleTabControlExt_OnTabClosed(object sender, CloseTabEventArgs e)
+		{
+			var itemToRemove = e.TargetTabItem as TabItemExt;
+			ServiceLocator.Current.GetInstance<MainViewModel>().RuleTabs.Remove(itemToRemove);
 		}
 	}
 }

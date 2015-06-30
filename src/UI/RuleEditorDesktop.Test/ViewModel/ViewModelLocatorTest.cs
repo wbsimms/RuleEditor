@@ -14,5 +14,11 @@ namespace RuleEditorDesktop.Test.ViewModel
 			Assert.IsNotNull(locator);
 			Assert.IsNotNull(locator.Main);
 		}
+
+		public void CleanupTest()
+		{
+			ViewModelLocator.Cleanup();
+
+		}
 	}
 }

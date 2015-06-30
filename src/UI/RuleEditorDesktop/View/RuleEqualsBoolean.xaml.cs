@@ -12,17 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Syncfusion.Windows.Tools.Controls;
 
 namespace RuleEditorDesktop.View
 {
 	/// <summary>
 	/// Interaction logic for RuleEqualsBoolean.xaml
 	/// </summary>
-	public partial class RuleEqualsBoolean : UserControl
+	public partial class RuleEqualsBoolean : TabItemExt
 	{
 		public RuleEqualsBoolean()
 		{
 			InitializeComponent();
+			this.Header = "(Untitled) - Equals Boolean";
 		}
 	}
 }

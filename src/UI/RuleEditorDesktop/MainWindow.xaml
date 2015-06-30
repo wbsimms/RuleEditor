@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Rule Editor" Height="599.333" Width="1235.963" 
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:view="clr-namespace:RuleEditorDesktop.View"
         syncfusion:SkinStorage.VisualStyle="Blend"
         DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
     <Grid Margin="5,5">
@@ -16,8 +17,9 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
             <Label>Rule Types</Label>
-            
-            <ComboBox  ItemsSource="{Binding RuleTypes, Mode=OneWay}" HorizontalAlignment="Right" Width="200"></ComboBox>
+            <ComboBox x:Name="RuleTemplateComboBox" ItemsSource="{Binding RuleTypes, Mode=OneWay}" SelectedValue="{Binding SelectedRuleType, Mode=OneWayToSource}" HorizontalAlignment="Right" Width="200"></ComboBox>
         </StackPanel>
+        <syncfusion:TabControlExt x:Name="RuleTabControlExt" TabClosed="RuleTabControlExt_OnTabClosed" ItemsSource="{Binding RuleTabs, Mode=TwoWay}" Grid.Column="0" Grid.Row="1" >
+        </syncfusion:TabControlExt>
     </Grid>
 </syncfusion:ChromelessWindow>

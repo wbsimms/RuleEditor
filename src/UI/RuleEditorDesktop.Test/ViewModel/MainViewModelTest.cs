@@ -28,7 +28,44 @@ namespace RuleEditorDesktop.Test.ViewModel
 			MainViewModel model = new MainViewModel(factory.Object);
 			var ruleTypes = model.RuleTypes;
 			Assert.IsNotNull(ruleTypes);
-
 		}
+
+		[TestMethod]
+		public void RuleTabsTest()
+		{
+			Mock<IUnitOfWorkFactory> factory = new Mock<IUnitOfWorkFactory>();
+			factory.Setup(x => x.GetUnitOfWork());
+
+			MainViewModel model = new MainViewModel(factory.Object);
+			var ruleTypes = model.RuleTabs;
+			Assert.IsNotNull(ruleTypes);
+		}
+
+		[TestMethod]
+		public void ShowRuleTypeTest()
+		{
+			Mock<IUnitOfWorkFactory> factory = new Mock<IUnitOfWorkFactory>();
+			factory.Setup(x => x.GetUnitOfWork());
+
+			MainViewModel model = new MainViewModel(factory.Object);
+			model.ShowRuleType("Equals Boolean");
+			Assert.AreEqual(1,model.RuleTabs.Count);
+		}
+
+		[TestMethod]
+		public void SelectedRuleTypeTest()
+		{
+			Mock<IUnitOfWorkFactory> factory = new Mock<IUnitOfWorkFactory>();
+			factory.Setup(x => x.GetUnitOfWork());
+
+			MainViewModel model = new MainViewModel(factory.Object);
+			model.SelectedRuleType = "blah";
+			Assert.IsNotNull(model.SelectedRuleType);
+			model.SelectedRuleType = "blah";
+			Assert.AreEqual("blah",model.SelectedRuleType);
+		}
+
+
+
 	}
 }
