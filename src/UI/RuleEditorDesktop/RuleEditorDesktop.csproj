@@ -108,6 +108,7 @@
     </ApplicationDefinition>
     <Compile Include="RuleEditorDesktopResolver.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\RuleEqualsBooleanViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\RuleEqualsBoolean.xaml.cs">
       <DependentUpon>RuleEqualsBoolean.xaml</DependentUpon>
