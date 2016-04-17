@@ -57,7 +57,7 @@ namespace RuleEditorDesktop.ViewModel
 	    }
 
 
-	    public const string RuleTabsPropertyName = "ShowRules";
+	    public const string RuleTabsPropertyName = "RuleTabs";
 	    private List<TabItemExt> tabItemsExts = new List<TabItemExt>();
 
 	    public List<TabItemExt> RuleTabs
@@ -78,9 +78,9 @@ namespace RuleEditorDesktop.ViewModel
 	    {
 		    if (type == "Equals Boolean")
 		    {
-			    var list = new List<TabItemExt>(tabItemsExts);
+			    var list = new List<TabItemExt>(this.tabItemsExts);
 				list.Add(new RuleEqualsBoolean());
-				this.RuleTabs = list;
+			    this.RuleTabs = list;
 		    }
 	    }
     }
