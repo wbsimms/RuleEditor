@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Practices.ServiceLocation;
-using RuleEditorDesktop.View;
 using RuleEditorDesktop.ViewModel;
 using Syncfusion.Windows.Shared;
 using Syncfusion.Windows.Tools.Controls;

@@ -4,7 +4,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
-using RuleEditorDesktop.View;
 using RuleGist.DataAccess;
 using Syncfusion.Windows.Tools.Controls;
 
@@ -79,7 +78,6 @@ namespace RuleEditorDesktop.ViewModel
 		    if (type == "Equals Boolean")
 		    {
 			    var list = new List<TabItemExt>(this.tabItemsExts);
-				list.Add(new RuleEqualsBoolean());
 			    this.RuleTabs = list;
 		    }
 	    }

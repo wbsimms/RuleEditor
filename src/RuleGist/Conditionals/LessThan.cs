@@ -15,11 +15,11 @@ namespace RuleGist.Conditionals
 		{
 			double leftd, rightd;
 
-			if (!Double.TryParse(left.ToString(), out leftd) || !Double.TryParse(left.ToString(), out rightd))
+			if (!Double.TryParse(left.ToString(), out leftd) || !Double.TryParse(right.ToString(), out rightd))
 			{
 				throw new ArgumentException("left and right must be convertable to double");
 			}
-			return Convert.ToDouble(leftd) < Convert.ToDouble(rightd);
+			return leftd < rightd;
 		}
 	}
 }
