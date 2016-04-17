@@ -1,7 +1,6 @@
 using GalaSoft.MvvmLight;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Practices.Unity;
-using UnityServiceLocator = Microsoft.Practices.Unity.ServiceLocatorAdapter.UnityServiceLocator;
 
 namespace RuleEditorDesktop.ViewModel
 {
