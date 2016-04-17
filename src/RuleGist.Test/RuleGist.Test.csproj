@@ -81,6 +81,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Conditionals\LessThanTest.cs" />
     <Compile Include="Conditionals\NotEqualsTest.cs" />
     <Compile Include="RuleGistResolverTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
