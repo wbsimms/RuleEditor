@@ -64,6 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conditionals\Conditional.cs" />
+    <Compile Include="ConditionalRule.cs" />
+    <Compile Include="Conditionals\Equals.cs" />
+    <Compile Include="Conditionals\LessThan.cs" />
+    <Compile Include="Conditionals\NotEquals.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RuleGistResolver.cs" />
   </ItemGroup>
