@@ -33,7 +33,6 @@ namespace RuleEditorDesktop
 		{
 			RuleGistDataAccessResolver.Instance.Register(container);
 			container.RegisterType<MainViewModel, MainViewModel>(new ContainerControlledLifetimeManager());
-			container.RegisterType<RuleEqualsBooleanViewModel, RuleEqualsBooleanViewModel>(new PerResolveLifetimeManager());
 		}
 
 		public IUnityContainer Container { get { return _container; } }

@@ -90,7 +90,6 @@
     <Compile Include="AppTest.cs" />
     <Compile Include="ViewModel\MainViewModelTest.cs" />
     <Compile Include="ViewModel\ViewModelLocatorTest.cs" />
-    <Compile Include="View\RuleEqualsBooleanTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\DataAccess\RuleGist.DataAccess\RuleGist.DataAccess.csproj">
@@ -105,6 +104,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
