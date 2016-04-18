@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
+using RuleEditorDesktop.RuleViews;
 using RuleGist.DataAccess;
 using Syncfusion.Windows.Tools.Controls;
 
@@ -17,7 +19,7 @@ namespace RuleEditorDesktop.ViewModel
         {
 	        this.factory = uowFactory;
 
-			this.RuleTypes = new List<string>(){"Equals Boolean", "Rule2", "Rule3"};
+			this.RuleTypes = new List<string>(){"Equals", "Rule2", "Rule3"};
         }
 
 	    public const string RuleTypesPropertyName = "RuleTypes";
@@ -57,7 +59,7 @@ namespace RuleEditorDesktop.ViewModel
 
 
 	    public const string RuleTabsPropertyName = "RuleTabs";
-	    private List<TabItemExt> tabItemsExts = new List<TabItemExt>();
+	    private List<TabItemExt> tabItemsExts = new List<TabItemExt>() {new TabItemExt() {Header = "Cond", Content = new Conditional()} };
 
 	    public List<TabItemExt> RuleTabs
 	    {

@@ -12,15 +12,6 @@ namespace RuleEditorDesktop.ViewModel
 			ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(container));
 		}
 
-	    public RuleEqualsBooleanViewModel RuleEqualsBooleanViewModel
-	    {
-		    get
-		    {
-			    return ServiceLocator.Current.GetInstance<RuleEqualsBooleanViewModel>();
-			    
-		    }
-	    }
-
 	    public MainViewModel Main
         {
             get

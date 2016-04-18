@@ -107,8 +107,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="RuleEditorDesktopResolver.cs" />
+    <Compile Include="RuleViews\Conditional.xaml.cs">
+      <DependentUpon>Conditional.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\RuleEqualsBooleanViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -122,6 +124,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RuleViews\Conditional.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -156,10 +162,12 @@
       <Project>{2532429E-9E5B-4F41-BE52-E11019030F28}</Project>
       <Name>RuleGist.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\RuleGist\RuleGist.csproj">
+      <Project>{5EDA75F4-D43C-46DF-A411-AB97737669E4}</Project>
+      <Name>RuleGist</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
